@@ -24,7 +24,7 @@
                         <li><a href="#introduction" class="hover:text-picto-primary px-5 py-3 mx-1">Home</a></li>
                         <li><a href="#profile" class="hover:text-picto-primary px-5 py-3 mx-1">About</a></li>
                         <li><a href="#work-process" class="hover:text-picto-primary px-5 py-3 mx-1">Experience</a></li>
-                        <li><a href="#portfolio" class="hover:text-picto-primary px-5 py-3 mx-1">Projects</a></li>
+                        {{--  <li><a href="#portfolio" class="hover:text-picto-primary px-5 py-3 mx-1">Projects</a></li>  --}}
                         <li><a href="#blog" class="hover:text-picto-primary px-5 py-3 mx-1">Education</a></li>
                         <li><a href="#services" class="hover:text-picto-primary px-5 py-3 mx-1">Skills</a></li>
                     </ul>
@@ -39,7 +39,7 @@
                     <li><a href="#introduction" class="hover:text-picto-primary px-5 py-3 mx-1">Home</a></li>
                     <li><a href="#profile" class="hover:text-picto-primary px-5 py-3 mx-1">About</a></li>
                     <li><a href="#work-process" class="hover:text-picto-primary px-5 py-3 mx-1">Experience</a></li>
-                    <li><a href="#portfolio" class="hover:text-picto-primary px-5 py-3 mx-1">Projects</a></li>
+                    {{--  <li><a href="#portfolio" class="hover:text-picto-primary px-5 py-3 mx-1">Projects</a></li>  --}}
                     <li><a href="#blog" class="hover:text-picto-primary px-5 py-3 mx-1">Education</a></li>
                     <li><a href="#services" class="hover:text-picto-primary px-5 py-3 mx-1">Skills</a></li>
                 </ul>
@@ -113,27 +113,27 @@
                             <img class="bg-soft-white h-[120%] object-cover"
                                  src="{{ asset('assets/portfolio2/images/person2.png') }}" alt="">
                         </div>
-                        <div class="relative bottom-9">
+                        {{--  <div class="relative bottom-9">
                             <div class="flex justify-center">
                                 <div class="px-4 sm:px-6 py-2.5 z-50 bg-white rounded-[4px] shadow-2xl drop-shadow-2xl shadow-white inline-flex">
                                     <!-- Social Media Icons -->
                                     <div class="flex gap-2 items-center justify-center">
                                         <a href="https://www.facebook.com/share/14RnXHXxtPg/" target="_blank" rel="noopener noreferrer"
-                                           class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
+                                           class="social-icon-box text-picto-primary hover:bg-red-500 hover:text-white rounded-md transition-all duration-300">
                                             <i class="fab fa-facebook-f"></i>
                                         </a>
                                         <a href="https://www.linkedin.com/in/sabry-mokhtar-6aa9101a8/" target="_blank" rel="noopener noreferrer"
-                                           class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
+                                           class="social-icon-box text-picto-primary hover:bg-red-500 hover:text-white rounded-md transition-all duration-300">
                                             <i class="fab fa-linkedin"></i>
                                         </a>
                                         <a href="mailto:{{ $cvData['contact']['email'] ?? 'sabrymokhtar64@gmail.com' }}"
-                                           class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
+                                           class="social-icon-box text-picto-primary hover:bg-red-500 hover:text-white rounded-md transition-all duration-300">
                                             <i class="fas fa-envelope"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>  --}}
                     </div>
                     <div class="max-sm:w-full w-[33rem]">
                         <h2 class="text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8">
@@ -190,7 +190,7 @@
     </div>
 
     <!-- Projects/Portfolio Section -->
-    <div class="content max-w-[1320px] mx-auto mt-10 md:mt-15 xl:mt-25 mb-10 md:mb-25 max-xxl:p-2" id="portfolio">
+    {{--  <div class="content max-w-[1320px] mx-auto mt-10 md:mt-15 xl:mt-25 mb-10 md:mb-25 max-xxl:p-2" id="portfolio">
         <div class="xl:mb-17.5 mb-5">
             <div class="max-sm:px-2 text-center mx-auto max-w-144.25">
                 <p class="section-title md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium">Projects & Achievements</p>
@@ -219,10 +219,10 @@
                 @endif
             </div>
         </div>
-    </div>
+    </div>  --}}
 
     <!-- Work Together Section -->
-    <div class="bg-gray-900">
+    {{--  <div class="bg-gray-900">
         <div class="py-25 max-w-169 mx-auto px-2 text-center">
             <p class="text-white md:font-semibold text-2xl sm:text-3xl md:text-5xl pb-8">
                 Do you have a Construction Project? Let's discuss your project!
@@ -234,14 +234,14 @@
                 Let's work Together <i class="fas fa-arrow-right ms-3"></i>
             </a>
         </div>
-    </div>
+    </div>  --}}
 
     <!-- Education Section -->
     <div class="blog-background">
         <div class="content max-w-[1320px] mx-auto py-25 px-2 relative" id="blog">
             <div class="max-w-135 text-center mx-auto pb-17.5">
-                <p class="section-title md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium pb-6">Education</p>
-                <p class="text-xs xs:text-[16px] md:text-lg text-gray-400 mb-8">
+                <p class="section-title md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium pb-6"  style="color: #FFFFFF;">Education</p>
+                <p class="text-xs xs:text-[16px] md:text-lg text-gray-400 mb-8"  style="color: #FFFFFF;">
                     Academic qualifications and achievements in civil engineering.
                 </p>
                 @if(isset($cvData['education']))
@@ -317,7 +317,7 @@
     <!-- Companies Section -->
     <div class="content max-w-[1320px] mx-auto py-10 md:py-25 flex flex-col items-center px-2">
         <div class="max-w-144.25 text-center">
-            <p class="section-title md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium mb-6">Companies I've Worked With</p>
+            <p class="section-title md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium mb-6"  style="color: #FFFFFF;">Companies I've Worked With</p>
             <p class="text-[14px] sm:text-lg text-soft-dark font-normal mb-8">
                 I've had the pleasure of working with reputable construction companies in UAE and Egypt.
             </p>
@@ -382,22 +382,22 @@
                         @endif
                         @endif
                     </div>
-                    <div class="w-full max-lg:text-center max-md:mb-4">
+                    {{--  <div class="w-full max-lg:text-center max-md:mb-4">
                         <div class="flex gap-2 items-center justify-center lg:justify-start">
                             <a href="https://www.facebook.com/share/14RnXHXxtPg/" target="_blank" rel="noopener noreferrer"
-                               class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
+                               class="social-icon-box text-picto-primary hover:bg-red-500 hover:text-white rounded-md transition-all duration-300">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/sabry-mokhtar-6aa9101a8/" target="_blank" rel="noopener noreferrer"
-                               class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
+                               class="social-icon-box text-picto-primary hover:bg-red-500 hover:text-white rounded-md transition-all duration-300">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                             <a href="mailto:{{ $cvData['contact']['email'] ?? 'sabrymokhtar64@gmail.com' }}"
-                               class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
+                               class="social-icon-box text-picto-primary hover:bg-red-500 hover:text-white rounded-md transition-all duration-300">
                                 <i class="fas fa-envelope"></i>
                             </a>
                         </div>
-                    </div>
+                    </div>  --}}
                 </div>
                 <div class="w-full overflow-y-scroll py-6.5">
                     <p class="text-xl mb-2 xs:text-2xl sm:text-2xl md:text-[38px] font-semibold text-[#132238] lg:hidden text-center">
@@ -434,15 +434,15 @@
                     <a href="#introduction" class="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]">Home<span class="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span></a>
                     <a href="#profile" class="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]">About<span class="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span></a>
                     <a href="#work-process" class="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]">Experience<span class="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span></a>
-                    <a href="#portfolio" class="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]">Projects<span class="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span></a>
+                    {{--  <a href="#portfolio" class="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]">Projects<span class="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span></a>  --}}
                     <a href="#blog" class="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]">Education<span class="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span></a>
                     <a href="#services" class="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]">Skills<span class="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span></a>
                     <a href="#contact" class="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]">Contact<span class="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span></a>
                 </div>
-                <p class="text-[12px] sm:text-[16px]">Copyright &copy; {{ date('Y') }} Picto.</p>
+
             </div>
-            <p class="text-white text-center max-xs:text-[12px] max-md:text-[14px] w-full py-10">
-                Developed with ❤️ by <a href="https://www.themewagon.com" class="underline font-bold" target="_blank">ThemeWagon</a>
+            <p class="text-white text-center max-xs:text-[12px] max-md:text-[14px] w-full py-10" style="color: #FFFFFF;">
+                Developed with ❤️ by <a href="https://www.linkedin.com/in/developerahmedsayed" class="underline font-bold" target="_blank">Eng AhmdSyd</a>
             </p>
         </div>
     </div>
