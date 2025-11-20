@@ -1,0 +1,93 @@
+{
+  "name": "Sabry Mokhtar",
+  "title": "Civil Engineer",
+  "profile": "Motivated Civil Engineer with Good Experience in & supervision construction & management and quantity surveyor",
+  "objective": [
+    "To join a successful team, gaining experience and sharing your success",
+    "Interested in playing an active role in a multinational firm which will provide advancement opportunities and supporting my individual career development"
+  ],
+  "contact": {
+    "phone": ["+971544220928", "+201060866833"],
+    "location": "Ras Al Khaimah, U.A.E.",
+    "email": "sabrymokhtar64@gmail.com"
+  },
+  "personalData": {
+    "dateOfBirth": "13/04/1994",
+    "nationality": "Egyptian",
+    "militaryStatus": "Exemption",
+    "socialStatus": "Married"
+  },
+  "languages": [
+    { "name": "Arabic", "level": "Native" },
+    { "name": "English", "level": "Good" }
+  ],
+  "education": {
+    "degree": "Bachelor's degree in Civil Engineering",
+    "university": "University of Helwan Mattaria",
+    "graduationProject": "Irrigation: Grade [Excellent]",
+    "totalGrade": "Good",
+    "graduationYear": "2020"
+  },
+  "workExperience": [
+    {
+      "period": "From Oct 2024 Until Now",
+      "position": "Cost Control Engineer",
+      "company": "ORION CONTRACTING COMPANY RAK LLC",
+      "location": "IN UAE"
+    },
+    {
+      "period": "Mar 2023 Until Oct 2024",
+      "position": "Project Manager",
+      "company": "EL WAHA FOR GENERAL CONSTRUCTION",
+      "location": "IN EGY"
+    },
+    {
+      "period": "From Oct 2022 – Mar 2023",
+      "position": "Site Engineer",
+      "company": "BUILD RIGHT CONSTRUCTION (F.N.G)",
+      "location": "IN UAE"
+    },
+    {
+      "period": "From Aug 2020 – Sep. 2022",
+      "position": "Site Engineer",
+      "company": "EL WAHA FOR GENERAL CONSTRUCTION",
+      "location": "IN EGY"
+    },
+    {
+      "period": "From MAY 2018 – 2019",
+      "position": "Assistant Site Engineer",
+      "company": "EL MOHANDES Construction",
+      "location": "IN EGY"
+    },
+    {
+      "period": "From June 2017 – Feb. 2018",
+      "position": "Assistant Site Engineer",
+      "company": "Tabark Construction",
+      "location": "IN EGY"
+    }
+  ],
+  "computerSkills": [
+    "AutoCAD",
+    "PlanSwift",
+    "SAP2000",
+    "Revit",
+    "Microsoft Office",
+    "ERP System"
+  ],
+  "personalSkills": [
+    "Construction CAD and Personal Development",
+    "Building and Environmental Engineering",
+    "Analytical Work on Calculations Relating to Structures",
+    "Computer drawing and related software packages",
+    "Calculate Quantities and Shop drawing",
+    "Receipt of several projects at the same time",
+    "Ability to work under pressure and for long time",
+    "Ability to integrate with the team and development",
+    "Ability to work alone as if you were in the team work",
+    "Research and compile the information in a short time",
+    "Learn new tasks quickly",
+    "Have communication skills and presentation",
+    "Ability to analyze problems and find solutions",
+    "Have team management skills and the distribution of work roles"
+  ]
+}
