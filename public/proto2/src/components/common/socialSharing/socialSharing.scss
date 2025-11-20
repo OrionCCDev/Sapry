@@ -1,0 +1,121 @@
+$colors-button: #FFF;
+$p_size: 3em;
+$p_plus: 1em;
+$bg: #9929fb; // Using the picto-primary color from the project
+$hover-color: #650fa0; // picto-primary-dark
+
+.shadow {
+  -webkit-box-shadow: -2px 1px 7px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: -2px 1px 7px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: -2px 1px 7px 0px rgba(50, 50, 50, 0.75);
+}
+
+@mixin socials($circle-size, $social-size) {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  border-radius: 50%;
+  padding: 0;
+
+  > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -($social-size / 2);
+    width: $social-size;
+    height: $social-size;
+    border-radius: 50%;
+
+    $angle: (360 / 3); // Changed from 6 to 3 icons
+    $rot: 0;
+
+    @for $i from 1 through 3 { // Changed from 6 to 3
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+        -webkit-transition: all 0.3s cubic-bezier(.87,-.30,.19,1.44);
+        transition: all 0.3s cubic-bezier(.87,-.30,.19,1.44);
+        @extend .shadow;
+      }
+      $rot: $rot + $angle;
+    }
+
+    background-color: $colors-button;
+  }
+}
+
+.social_box {
+  // Fixed positioning at bottom right
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 9em;
+  z-index: 1000; // High z-index to stay on top
+}
+
+.social_box:hover .social_circle {
+  @include socials($circle-size: 9em, $social-size: $p_size);
+}
+
+.social svg {
+  position: relative;
+  opacity: 0;
+  padding-top: 15px;
+  font-size: 20px;
+  color: #333;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.social_box:hover .social_circle .social svg {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+#share svg {
+  padding-top: 12px;
+  font-size: 23px;
+  color: #333;
+  width: 23px !important;
+  height: 23px !important;
+}
+
+#share {
+  position: relative;
+  width: $p_size;
+  height: $p_size;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  top: 94px;
+  left: 46px;
+  display: block;
+  @extend .shadow;
+  transition: all 0.2s cubic-bezier(.87,-.31,.19,1.44);
+  z-index: 9;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(#FFFFFF, 5%);
+  }
+}
+
+.social_box:hover #share {
+  position: relative;
+
+  svg {
+    color: $bg;
+  }
+}
+
+.social a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  &:hover svg {
+    color: $hover-color;
+    transform: scale(1.1);
+  }
+}
