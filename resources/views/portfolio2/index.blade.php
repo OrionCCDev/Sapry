@@ -118,13 +118,17 @@
                                 <div class="px-4 sm:px-6 py-2.5 z-50 bg-white rounded-[4px] shadow-2xl drop-shadow-2xl shadow-white inline-flex">
                                     <!-- Social Media Icons -->
                                     <div class="flex gap-2 items-center justify-center">
-                                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                                        <a href="https://www.facebook.com/share/14RnXHXxtPg/" target="_blank" rel="noopener noreferrer"
                                            class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
                                             <i class="fab fa-facebook-f"></i>
                                         </a>
-                                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                                        <a href="https://www.linkedin.com/in/sabry-mokhtar-6aa9101a8/" target="_blank" rel="noopener noreferrer"
                                            class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
                                             <i class="fab fa-linkedin"></i>
+                                        </a>
+                                        <a href="mailto:{{ $cvData['contact']['email'] ?? 'sabrymokhtar64@gmail.com' }}"
+                                           class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
+                                            <i class="fas fa-envelope"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -379,14 +383,18 @@
                         @endif
                     </div>
                     <div class="w-full max-lg:text-center max-md:mb-4">
-                        <div class="flex gap-2 items-center justify-center">
-                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        <div class="flex gap-2 items-center justify-center lg:justify-start">
+                            <a href="https://www.facebook.com/share/14RnXHXxtPg/" target="_blank" rel="noopener noreferrer"
                                class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                            <a href="https://www.linkedin.com/in/sabry-mokhtar-6aa9101a8/" target="_blank" rel="noopener noreferrer"
                                class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
                                 <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:{{ $cvData['contact']['email'] ?? 'sabrymokhtar64@gmail.com' }}"
+                               class="social-icon-box text-picto-primary hover:bg-picto-primary hover:text-white rounded-md transition-all duration-300">
+                                <i class="fas fa-envelope"></i>
                             </a>
                         </div>
                     </div>
