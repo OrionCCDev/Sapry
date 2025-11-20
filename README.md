@@ -1,59 +1,156 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sapry - Portfolio Application
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern Laravel-based portfolio application featuring multiple portfolio designs with responsive UI/UX.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- 🎨 **Multiple Portfolio Designs**
+  - Welcome page with photography portfolio
+  - Portfolio2 page with civil engineer CV integration
+  
+- 🚀 **Modern Tech Stack**
+  - Laravel 11
+  - Tailwind CSS + DaisyUI
+  - Bootstrap 5.3.3
+  - Vite for asset compilation
+  
+- 📱 **Responsive Design**
+  - Mobile-first approach
+  - Modern UI/UX
+  - Smooth animations and transitions
+  
+- 🔧 **Dynamic Content**
+  - JSON-based CV data integration
+  - Easy content management
+  - Flexible portfolio sections
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Requirements
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- PHP 8.2 or higher
+- Composer
+- Node.js 18+ and npm
+- MySQL/MariaDB or PostgreSQL
 
-## Learning Laravel
+## Installation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+1. **Clone the repository:**
+```bash
+git clone https://github.com/OrionCCDev/Sapry.git
+cd Sapry
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2. **Install PHP dependencies:**
+```bash
+composer install
+```
 
-## Laravel Sponsors
+3. **Install Node dependencies:**
+```bash
+npm install
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+4. **Set up environment:**
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-### Premium Partners
+5. **Configure database in `.env`:**
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+6. **Run migrations:**
+```bash
+php artisan migrate
+```
 
-## Contributing
+7. **Build assets:**
+```bash
+npm run build
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+8. **Start development server:**
+```bash
+php artisan serve
+```
 
-## Code of Conduct
+Visit `http://localhost:8000` to see the application.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Routes
 
-## Security Vulnerabilities
+- `/` - Welcome page (Photography Portfolio)
+- `/portfolio2` - Civil Engineer Portfolio with CV integration
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Deployment
+
+For detailed deployment instructions to a `.io` domain or any hosting provider, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
+### Quick Deploy Checklist
+
+- [ ] Update `APP_URL` in `.env` to your domain
+- [ ] Set `APP_ENV=production` and `APP_DEBUG=false`
+- [ ] Run `npm run build` to compile assets
+- [ ] Run `php artisan config:cache`
+- [ ] Set proper file permissions on `storage` and `bootstrap/cache`
+
+## Project Structure
+
+```
+├── app/
+│   ├── Http/Controllers/
+│   │   └── Portfolio2Controller.php
+│   └── Models/
+├── public/
+│   ├── assets/portfolio2/    # Portfolio2 assets
+│   └── proto2/                # Original React portfolio
+├── resources/
+│   ├── css/
+│   │   ├── app.css           # Welcome page styles
+│   │   └── portfolio2.css    # Portfolio2 styles
+│   ├── js/
+│   │   ├── app.js
+│   │   └── portfolio.js
+│   └── views/
+│       ├── welcome.blade.php
+│       └── portfolio2/
+│           └── index.blade.php
+└── routes/
+    └── web.php
+```
+
+## Configuration
+
+### Portfolio2 CV Data
+
+The Portfolio2 page loads data from `public/assets/portfolio2/cvData.json`. Update this file to customize the portfolio content.
+
+### Styling
+
+- **Welcome page**: Uses Bootstrap 5.3.3 (`resources/css/app.css`)
+- **Portfolio2**: Uses Tailwind CSS + DaisyUI (`resources/css/portfolio2.css`)
+
+## Development
+
+### Watch for changes:
+```bash
+npm run dev
+```
+
+### Build for production:
+```bash
+npm run build
+```
 
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Support
+
+For issues or questions, please open an issue on [GitHub](https://github.com/OrionCCDev/Sapry/issues).
