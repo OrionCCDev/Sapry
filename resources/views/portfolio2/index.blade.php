@@ -447,6 +447,22 @@
         </div>
     </div>
 
+    <!-- Fixed Floating Social Icons - Bottom Right -->
+    <div class="fixed-social-icons">
+        <a href="https://www.facebook.com/share/14RnXHXxtPg/" target="_blank" rel="noopener noreferrer"
+           class="social-floating-icon facebook-icon" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sabry-mokhtar-6aa9101a8/" target="_blank" rel="noopener noreferrer"
+           class="social-floating-icon linkedin-icon" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:{{ $cvData['contact']['email'] ?? 'sabrymokhtar64@gmail.com' }}"
+           class="social-floating-icon mail-icon" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
     <!-- Smooth Scroll Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -571,6 +587,12 @@
 
             // Update on page load
             setTimeout(updateActiveLink, 200);
+
+            // Floating animation for social icons
+            const socialIcons = document.querySelectorAll('.social-floating-icon');
+            socialIcons.forEach((icon, index) => {
+                icon.style.animationDelay = `${index * 0.1}s`;
+            });
         });
     </script>
 </body>
