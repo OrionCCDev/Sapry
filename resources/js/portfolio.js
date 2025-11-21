@@ -78,10 +78,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Parallax effect for hero background
+    function initHeroParallax() {
+        const hero = document.querySelector('.introduction-profile-background');
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!hero || prefersReducedMotion) {
+            return;
+        }
+
+        const updateParallax = () => {
+            const scrollY = window.scrollY || document.documentElement.scrollTop;
+            hero.style.setProperty('--parallax-offset', `${scrollY}px`);
+        };
+
+        updateParallax();
+        window.addEventListener('scroll', updateParallax, { passive: true });
+        window.addEventListener('resize', updateParallax);
+    }
+
     // Initialize all functions
     initSmoothScroll();
     initScrollAnimations();
     initHoverEffects();
+    initHeroParallax();
 
     // Image loading handler
     const images = document.querySelectorAll('img');
