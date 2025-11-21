@@ -62,7 +62,7 @@
                                 {{ $cvData['name'] ?? 'Sabry Mokhtar Abdallah' }}
                             </span>
                         </p>
-                        <p class="text-xs xxs:text-lg lg:text-[18px] my-6" style="color: rgb(152, 172, 236)">
+                        <p class="text-xs xxs:text-lg lg:text-[18px] my-6" style="color: rgb(47, 54, 77)">
                             I'm a <span class="bg-highlight">{{ $cvData['title'] ?? 'Civil Engineer' }}</span> based in {{ $cvData['contact']['location'] ?? 'Ras Al Khaimah, U.A.E.' }}. {{ $cvData['profile'] ?? 'Motivated Civil Engineer with Good Experience in & supervision construction & management and quantity surveyor' }}
                         </p>
                         <p class="text-center lg:text-start">
