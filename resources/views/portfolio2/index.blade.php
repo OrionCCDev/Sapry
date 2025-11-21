@@ -30,7 +30,7 @@
                     </ul>
                 </div>
                 <a href="#introduction" class="flex items-center border-0 lg:max-xxl:ps-5">
-                    <img src="{{ asset('assets/portfolio2/logo.png') }}" class="h-8 sm:h-14 rounded-2xl" alt="logo">
+                    <img src="{{ asset('assets/portfolio2/logo-sm.svg') }}" class="h-8 sm:h-14 rounded-2xl" alt="logo">
                     <p class="text-2xl sm:text-[32px] my-auto ms-[12px] font-semibold">{{ $cvData['name'] ?? 'Sabry Mokhtar' }}</p>
                 </a>
             </div>
@@ -56,7 +56,7 @@
             <div class="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-31.5 lg:mb-27.5 max-xl:gap-2 p-2 max-xxl:px-4" id="introduction">
                 <div class="w-full flex flex-col justify-between max-lg:text-center">
                     <div class="pt-13 me-31.5 w-full lg:w-auto transition-all duration-500">
-                        <p class="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full" style="color: white">
+                        <p class="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full" >
                             Hello, I'm
                             <span class="text-nowrap shrink-0 inline-block w-full">
                                 {{ $cvData['name'] ?? 'Sabry Mokhtar Abdallah' }}
@@ -427,7 +427,7 @@
         <div class="content max-w-[1320px] mx-auto pt-25 md:pt-40 max-2xl:px-3">
             <div class="flex max-md:flex-col justify-between mx-0 items-center h-full w-full text-neutral-200">
                 <a href="#" class="flex items-center border-0">
-                    <img src="{{ asset('assets/portfolio2/logo.png') }}" class="h-8 sm:h-14 rounded-2xl" alt="logo">
+                    <img src="{{ asset('assets/portfolio2/logo-sm.svg') }}" class="h-8 sm:h-14 rounded-2xl" alt="logo">
                     <p class="text-3xl sm:text-[32px] my-auto ms-[12px] font-semibold">{{ $cvData['name'] ?? 'Sabry Mokhtar Abdallah' }}</p>
                 </a>
                 <div class="mx-7 max-md:my-7 text-center">

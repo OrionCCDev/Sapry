@@ -1,0 +1,17 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">SM Monogram Logo</title>
+  <desc id="desc">Rounded square badge with the letters S and M for the portfolio brand.</desc>
+  <defs>
+    <linearGradient id="smGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="112" height="112" x="8" y="8" rx="28" fill="url(#smGradient)" filter="url(#shadow)"/>
+  <path d="M47 42c6 0 9 3 9 7 0 8-14 7-14 13 0 3 4 5 8 5 4 0 7-1 10-3l3 9c-4 3-9 5-15 5-11 0-18-6-18-14 0-16 18-12 18-18 0-2-2-3-5-3-3 0-7 1-11 3l-3-9c5-2 12-5 18-5zm35-1c11 0 19 8 19 21v29h-13v-27c0-5-2-8-6-8-5 0-7 3-7 8v27H62V42h13v7c3-5 8-8 13-8z" fill="#f8fafc"/>
+</svg>
+
